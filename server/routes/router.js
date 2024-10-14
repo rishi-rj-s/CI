@@ -1,8 +1,6 @@
 const express = require('express')
 const services = require('../services/render')
-const controller = require('../controller/controller')
-const session = require('express-session')
-const { off, getMaxListeners } = require('../model/model')
+const controller = require('../controller/cinderalla.js')
 const axios = require('axios')
 const {adminCheck} = require('../../util/middlewares.js')
 
@@ -95,6 +93,6 @@ route.get('/api/users/search', controller.search);
 route.route('/api/users/:id')
   .put(controller.update)
   .delete(controller.delete)
-route.post('/api/users/login', controller.login)
+route.post('/api/users/login', controller.LOGIN)
 
 module.exports = route

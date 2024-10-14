@@ -4,7 +4,7 @@ const session = require('express-session')
 
 
 // login
-exports.login = async(req, res) => {
+exports.LOGIN = async(req, res) => {
 
   const {email,password}=req.body
   const users = await Userdb.findOne({ email: email });

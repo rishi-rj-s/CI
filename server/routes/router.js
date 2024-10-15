@@ -1,6 +1,6 @@
 const express = require('express')
 const services = require('../services/render')
-const controller = require('../controller/cinderalla.js')
+const controller = require('../controller/usercontroller.js')
 const axios = require('axios')
 const {adminCheck} = require('../../util/middlewares.js')
 
